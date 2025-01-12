@@ -1,0 +1,40 @@
+<h1 data-label="elastic-load-balancing" class="ltx_title_section">Elastic Load Balancing</h1><div>In cloud computing, ensuring the availability, scalability, and
+reliability of applications is paramount. AWS ELB is a critical service
+that addresses these needs by distributing incoming traffic across
+multiple <b>Amazon Elastic Compute Cloud (Amazon EC2)</b> instances.
+This section delves into the intricacies of AWS ELB, its types, key
+features, and how it enhances the performance and resilience of
+applications hosted on AWS.</div><h2 data-label="aws-elastic-load-balancing-overview" class="ltx_title_subsection">AWS Elastic Load Balancing overview</h2><div>AWS Elastic Load Balancing is a fully managed service that automatically
+distributes incoming application traffic across multiple targets, such
+as Amazon EC2 instances, containers, and IP addresses, within one or
+more Availability Zones. ELB plays a crucial role in ensuring high
+availability and fault tolerance for applications while also improving
+the distribution of traffic for optimal performance [34].<b>Types of elastic load balancers:</b> AWS offers three types of ELB
+to cater to various application needs.</div><div><b>Application Load Balancer (ALB)</b> [35]:</div><div><b>Routing</b> : ALB operates at the application layer (Layer 7) and
+can route traffic based on content, such as HTTP/HTTPS requests. It is
+ideal for modern, microservices-based applications.</div><div><b>Features</b> : ALB supports features like content-based routing,
+path-based routing, host-based routing, and integration with AWS<b>Web Application Firewall (WAF)</b> .</div><div><b>Network Load Balancer (NLB):</b></div><div><b>Routing</b> : NLB operates at the transport layer (Layer 4) and is
+designed for ultra-high performance and low-latency traffic
+distribution. It is suitable for TCP, UDP, and TLS traffic.</div><div><b>Features</b> : NLB offers features like static IP addresses,
+health checks, and support for IP-based routing.</div><div><b>Classic Load Balancer (CLB):</b></div><div><b>Routing</b> : CLB is the legacy version of ELB and provides basic
+load-balancing capabilities. It operates at both the application and
+transport layers.</div><div><b>Features</b> : CLB offers features like cross-zone load balancing,
+SSL termination, and sticky sessions.</div><h2 data-label="section-7" class="ltx_title_subsection"></h2><h3 data-label="key-features-and-use-cases" class="ltx_title_subsubsection">Key features and use
+cases</h3><div>Following are the key features and use cases [36]:</div><ul><li><b>High availability</b> : ELB automatically distributes traffic
+across multiple instances or targets, ensuring applications remain
+available even if some instances fail.</li><li><b>Scalability</b> : ELB can seamlessly handle increasing traffic
+loads by adding or removing instances, allowing applications to scale
+horizontally.</li><li><b>Security</b> : Integration with AWS WAF allows ELB to protect
+applications from common web-based attacks, enhancing security.</li><li><b>Monitoring and insights</b> : ELB provides detailed monitoring and
+metrics through AWS CloudWatch, enabling real-time visibility into
+application traffic and performance.</li><li><b>Simplified deployment</b> : ELB can be easily configured and
+managed through the AWS Management Console, CLI, or SDKs.</li></ul><h2 data-label="section-8" class="ltx_title_subsection"></h2><h3 data-label="best-practices" class="ltx_title_subsubsection">Best practices</h3><div>The following are the best practices:</div><ul><li>Use Auto Scaling with ELB to automatically adjust the number of
+instances based on traffic.</li><li>Enable cross-zone load balancing for even distribution of traffic
+across Availability Zones.</li><li>Regularly monitor ELB metrics in CloudWatch to detect and mitigate
+performance issues.</li><li>Configure health checks to ensure ELB directs traffic only to healthy
+instances.</li></ul><div>In conclusion, AWS Elastic Load Balancing is a fundamental component of
+modern cloud architectures, ensuring the availability, scalability, and
+reliability of applications. Whether deploying microservices with ALB,
+handling low-latency traffic with NLB, or utilizing the legacy CLB, ELB
+offers the flexibility and features required to optimize application
+performance in the AWS ecosystem.</div>
